@@ -11,18 +11,31 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container-fluid text-center ">
+      <div class="card ">
+        <span class="top-suit">♥</span>
+        <span class="num">7</span>
+        <span class="bot-suit">♥</span>
+      </div>
+      <div class="button"><button>Click here for new card!</button></div>
+      <div class="inputs">
+        <div class="card-width">
+          <label for="card-width">Width:</label>
+          <input type="number" name="card-width" id="card-width" value="" />
+        </div>
+        <div class="card-height">
+          <label for="card-height">Height:</label>
+          <input type="number" name="card-height" id="card-height" value="" />
+        </div>
+        <input
+          type="submit"
+          value="Submit"
+          id="bntSubmit"
+          onclick="changeSize()"
+        />
       </div>
     </div>
   </body>
